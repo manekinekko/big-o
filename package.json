@@ -1,0 +1,23 @@
+{
+    "name": "mit",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js --exec babel-node --presets es2015,stage-2",
+        "build": "babel lib -d dist",
+        "test": "mocha --compilers js:babel-register ./lib/**/*.spec.js --opts ./mocha.opts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "assert": "^1.4.1",
+        "babel-cli": "^6.23.0",
+        "babel-preset-es2015": "^6.22.0",
+        "babel-preset-stage-2": "^6.22.0",
+        "babel-register": "^6.23.0",
+        "mocha": "^3.2.0",
+        "nodemon": "^1.11.0"
+    }
+}
